@@ -8,6 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
   function runAnimation() {
     if (prefersReduced) {
       card.style.opacity = 1;
+      card.style.filter = 'none';
       title.style.opacity = 1;
       title.style.filter = 'none';
       return;
@@ -16,6 +17,8 @@ window.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.drop, .ripple').forEach(el => el.remove());
 
     card.style.opacity = 0;
+    card.style.filter = 'blur(10px)';
+
 
     const drop = document.createElement('div');
     drop.className = 'drop';
@@ -28,7 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
     anime.timeline()
       .add({
         targets: drop,
-        translateY: ['-220', '65vh'],
+        translateY: ['-220', '50vh'],
         duration: 1600,
         easing: 'easeOutBounce'
       })
@@ -49,8 +52,10 @@ window.addEventListener('DOMContentLoaded', () => {
       .add({
         targets: card,
         opacity: [0, 1],
-        duration: 500,
-        easing: 'easeOutQuad'
+        filter: ['blur(10px)', 'blur(0px)'],
+        duration: 800,
+        easing: 'easeOutQuad',
+        offset: '-=300'
       })
       .add({
         targets: title,
