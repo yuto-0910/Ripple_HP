@@ -11,12 +11,12 @@ html, body {
 }
 
 /* ダークモード対応 */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     html, body {
         color: #fff;
-        background: #000;
+        background: #aadedb;
     }
-}
+} */
 
 /* カードレイアウト */
 .card {
