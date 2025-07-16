@@ -40,6 +40,7 @@ window.addEventListener('DOMContentLoaded', () => {
       })
       .add({
         targets: ripple,
+
         scale: [0, 60],
         opacity: [0.6, 0],
         duration: 1500,
@@ -59,6 +60,7 @@ window.addEventListener('DOMContentLoaded', () => {
         duration: 800,
         easing: 'easeOutQuad',
         offset: '-=300'
+
       });
   }
 
