@@ -5,7 +5,8 @@ html, body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    font-family: "Shizuru", "Noto Sans JP", sans-serif;
+    font-family: "Noto Serif JP", "Hiragino Mincho ProN", "YuMincho", serif;
+    font-weight: 200;
     color: #333;
     background: #fff;
 }
@@ -61,10 +62,10 @@ html, body {
 }
 
 .btn {
-    border: 1px solid #00A38C;
+    border: 1px solid #009fe3;
     border-radius: 4px;
     padding: 0.5rem;
-    color: #00A38C;
+    color: #009fe3;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
@@ -74,7 +75,7 @@ html, body {
 }
 
 .btn:hover {
-    background: #00A38C;
+    background: #009fe3;
     color: #fff;
 }
 
@@ -84,7 +85,7 @@ html, body {
     left: 50%;
     bottom: calc(100% + 4px);
     transform: translate(-50%, 10px);
-    background: #00A38C;
+    background: #009fe3;
     color: #fff;
     padding: 0.2rem 0.4rem;
     border-radius: 4px;
