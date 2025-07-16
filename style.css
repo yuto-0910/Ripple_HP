@@ -5,7 +5,7 @@ html, body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    font-family: "Meiryo", sans-serif;
+    font-family: "Shizuru", "Noto Sans JP", sans-serif;
     color: #333;
     background: #fff;
 }
@@ -105,27 +105,27 @@ body::before {
 }
 
 .drop {
-    width: 10px;
-    height: 10px;
-    transform: translate(-50%, -150px);
+    width: 14px;
+    height: 14px;
+    transform: translate(-50%, -220px);
 }
 
 .ripple {
-    width: 10px;
-    height: 10px;
-    top: calc(60vh - 5px);
+    width: 12px;
+    height: 12px;
+    top: calc(65vh - 6px);
     transform: translateX(-50%) scale(0);
     opacity: 0.6;
 }
 
 @keyframes drop {
-    from { transform: translate(-50%, -150px); }
-    to { transform: translate(-50%, calc(60vh - 5px)); }
+    from { transform: translate(-50%, -220px); }
+    to { transform: translate(-50%, calc(65vh - 6px)); }
 }
 
 @keyframes ripple {
     from { transform: translateX(-50%) scale(0); opacity: 0.6; }
-    to { transform: translateX(-50%) scale(12); opacity: 0; }
+    to { transform: translateX(-50%) scale(20); opacity: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
