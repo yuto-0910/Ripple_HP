@@ -5,8 +5,9 @@ html, body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    font-family: "Shizuru", "Noto Sans JP", sans-serif;
+    font-family: "Noto Serif JP", serif;
     color: #333;
+    font-weight: 200;
     background: #fff;
 }
 
@@ -29,12 +30,14 @@ html, body {
     justify-content: center;
     text-align: center;
     gap: 1rem;
+    opacity: 0;
 }
 
 .logo {
     width: 40%;
     max-width: 200px;
     height: auto;
+    cursor: pointer;
 }
 
 .store-name {
@@ -59,10 +62,10 @@ html, body {
 }
 
 .btn {
-    border: 1px solid #00A38C;
+    border: 1px solid #0000FF;
     border-radius: 4px;
     padding: 0.5rem;
-    color: #00A38C;
+    color: #0000FF;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
@@ -71,7 +74,7 @@ html, body {
 }
 
 .btn:hover {
-    background: #00A38C;
+    background: #0000FF;
     color: #fff;
 }
 
@@ -105,27 +108,27 @@ body::before {
 }
 
 .drop {
-    width: 14px;
-    height: 14px;
+    width: 42px;
+    height: 42px;
     transform: translate(-50%, -220px);
 }
 
 .ripple {
-    width: 12px;
-    height: 12px;
-    top: calc(65vh - 6px);
+    width: 36px;
+    height: 36px;
+    top: calc(65vh - 18px);
     transform: translateX(-50%) scale(0);
     opacity: 0.6;
 }
 
 @keyframes drop {
     from { transform: translate(-50%, -220px); }
-    to { transform: translate(-50%, calc(65vh - 6px)); }
+    to { transform: translate(-50%, calc(65vh - 18px)); }
 }
 
 @keyframes ripple {
     from { transform: translateX(-50%) scale(0); opacity: 0.6; }
-    to { transform: translateX(-50%) scale(20); opacity: 0; }
+    to { transform: translateX(-50%) scale(60); opacity: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
