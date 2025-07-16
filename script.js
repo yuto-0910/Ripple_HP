@@ -19,9 +19,9 @@ window.addEventListener('DOMContentLoaded', () => {
   anime.timeline()
     .add({
       targets: drop,
-      translateY: ['-150', '60vh'],
-      duration: 600,
-      easing: 'easeOutQuad'
+      translateY: ['-220', '65vh'],
+      duration: 800,
+      easing: 'easeOutBounce'
     })
     .add({
       targets: title,
@@ -39,9 +39,9 @@ window.addEventListener('DOMContentLoaded', () => {
     })
     .add({
       targets: ripple,
-      scale: [0, 12],
+      scale: [0, 20],
       opacity: [0.6, 0],
-      duration: 800,
+      duration: 1000,
       easing: 'easeOutQuad',
       offset: '-=600'
     });
