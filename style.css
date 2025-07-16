@@ -80,3 +80,58 @@ html, body {
     height: 24px;
 }
 
+/* === Ripple Theme Additions === */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(circle at 30% 20%, #d8f1ff 0%, #eaf8ff 35%, #ffffff 100%);
+    z-index: -2;
+}
+
+.store-name {
+    color: #009fe3;
+    opacity: 0;
+    filter: blur(10px);
+}
+
+.drop,
+.ripple {
+    position: absolute;
+    left: 50%;
+    background: #009fe3;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.drop {
+    width: 10px;
+    height: 10px;
+    transform: translate(-50%, -150px);
+}
+
+.ripple {
+    width: 10px;
+    height: 10px;
+    top: calc(60vh - 5px);
+    transform: translateX(-50%) scale(0);
+    opacity: 0.6;
+}
+
+@keyframes drop {
+    from { transform: translate(-50%, -150px); }
+    to { transform: translate(-50%, calc(60vh - 5px)); }
+}
+
+@keyframes ripple {
+    from { transform: translateX(-50%) scale(0); opacity: 0.6; }
+    to { transform: translateX(-50%) scale(12); opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .store-name {
+        opacity: 1;
+        filter: none;
+    }
+}
+
