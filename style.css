@@ -122,6 +122,12 @@ body::before {
     filter: blur(10px);
 }
 
+.info,
+.links {
+    opacity: 0;
+    filter: blur(10px);
+}
+
 .drop,
 .ripple {
     position: absolute;
@@ -157,6 +163,11 @@ body::before {
 
 @media (prefers-reduced-motion: reduce) {
     .store-name {
+        opacity: 1;
+        filter: none;
+    }
+    .info,
+    .links {
         opacity: 1;
         filter: none;
     }
