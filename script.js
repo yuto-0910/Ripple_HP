@@ -31,7 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
     anime.timeline()
       .add({
         targets: drop,
-        translateY: ['-220', '50vh'],
+        translateY: ['-520', '50vh'],
         duration: 1600,
         easing: 'easeOutBounce'
       })
