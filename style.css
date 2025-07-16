@@ -5,9 +5,8 @@ html, body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    font-family: "Noto Serif JP", serif;
+    font-family: "Shizuru", "Noto Sans JP", sans-serif;
     color: #333;
-    font-weight: 200;
     background: #fff;
 }
 
@@ -37,7 +36,6 @@ html, body {
     width: 40%;
     max-width: 200px;
     height: auto;
-    cursor: pointer;
 }
 
 .store-name {
@@ -62,10 +60,10 @@ html, body {
 }
 
 .btn {
-    border: 1px solid #0000FF;
+    border: 1px solid #00A38C;
     border-radius: 4px;
     padding: 0.5rem;
-    color: #0000FF;
+    color: #00A38C;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
@@ -74,7 +72,7 @@ html, body {
 }
 
 .btn:hover {
-    background: #0000FF;
+    background: #00A38C;
     color: #fff;
 }
 
